@@ -41,3 +41,9 @@ other Primary Considerations and the Requirements below.
    server-native newline sequence, the Application must disconnect all clients and perform
    a clean shutdown as quickly as possible.
 10. Clearly state all the assumptions you made in completing the Application.
+
+## Usage
+This application can be used as a simple python program
+```shell
+python server.py
+```
