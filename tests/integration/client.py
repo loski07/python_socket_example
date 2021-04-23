@@ -17,7 +17,7 @@ class Client:
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             try:
                 s.connect((self.server_ip, self.server_port))
-                for i in range(100):
+                for i in range(50):
                     message = "{:0>9}\n".format(random.randint(0, 999999999))
                     # print("sending: '{}'".format(message))
                     s.sendall(bytes(message, encoding='utf8'))
