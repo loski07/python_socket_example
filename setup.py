@@ -28,7 +28,7 @@ setup(
 
     packages=find_packages(exclude=['engine', 'docs', 'tests']),
 
-    install_requires=[],
+    install_requires=['argcomplete'],
 
     entry_points={
         'console_scripts': [
