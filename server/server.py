@@ -23,7 +23,7 @@ class Server:
         Only written by the logger thread.
     """
 
-    def __init__(self, server_port: int = 4001) -> None:
+    def __init__(self, server_port: int = 4000) -> None:
         """
         Constructor that initializes all object attributes.
         :param server_port: listening port for the server.

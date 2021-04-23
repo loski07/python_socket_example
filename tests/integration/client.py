@@ -6,7 +6,7 @@ import time
 
 
 class Client:
-    def __init__(self, server_port: int = 4001, server_ip: str = None) -> None:
+    def __init__(self, server_port: int = 4000, server_ip: str = None) -> None:
         self.server_port = server_port
         if server_ip:
             self.server_ip = server_ip
