@@ -36,34 +36,8 @@ other Primary Considerations and the Requirements below.
     2. The difference since the last report of the count of new duplicate numbers that
        have been received.
     3. The total number of unique numbers received for this run of the Application.
-    4. Example text for #8: Received 50 unique numbers, 2 duplicates. Unique total:
-567231
+    4. Example text for #8: Received 50 unique numbers, 2 duplicates. Unique total:567231
 9. If any connected client writes a single line with only the word "terminate" followed by a
    server-native newline sequence, the Application must disconnect all clients and perform
    a clean shutdown as quickly as possible.
 10. Clearly state all the assumptions you made in completing the Application.
-
-##Notes
-You may write tests at your own discretion. Tests are useful to ensure your Application
-passes `Primary Consideration A`.
-
-You may use common libraries in your project such as Apache Commons and Google
-Guava, particularly if their use helps improve Application simplicity and readability.
-However, the use of large frameworks, such as Akka, is prohibited.
-
-Your Application may not for any part of its operation use or require the use of external
-systems, for example Apache Kafka or Redis.
-
-At your discretion, leading zeroes present in the input may be stripped—or not
-used—when writing output to the log or console.
-
-Robust implementations of the Application typically handle more than 2M numbers per
-10-second reporting period on a modern MacBook Pro laptop (e.g.: 16 GiB of RAM and
-a 2.5 GHz Intel i7 processor).
-
-To test if your application is working as expected, you can try to telnet to it through the
-port 4000 by executing:
-```shell
-telnet localhost 4000
-```
-And manually type in the numbers sequentially followed by a newline (enter).
